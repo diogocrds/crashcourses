@@ -49,3 +49,19 @@ Folder: /NodeJS
 ```
 
 Don't include 'node_modules' in git > npm install.
+
+> ## Passport Login
+
+Date: 13/04
+
+Folder: /PassportLogin
+
+```
++ Free cluster on MongoDB
+> npm init -y
+> npm i express bcryptjs passport passport-local ejs express-ejs-layouts mongoose connect-flash express-session
+> npm i -D nodemon
+> npm run dev
+```
+
+Don't include 'node_modules' in git > npm install.
