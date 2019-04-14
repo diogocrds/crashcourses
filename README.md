@@ -2,25 +2,34 @@
 
 This contains all tutorials I've done to learn web development.
 
-> ## Basic Javascript
+> ## Editorial Website with React
 
-Date: 12/04
+Date: 14/04
 
-Folder: /Javascript
-
-> ## React JS
-
-Date: 12/04
-
-Folder: /reactjs
+Folder: /editorialWeb
 
 ```
-> npx create-react-app my-app
-> npm i uuid
++ Editorial Free Layout by HTML5 UP
+> npx create-react-app editorialWeb
 > npm i react-router-dom
-> npm i axios
 > npm start
 ```
+
+> ## Passport Login
+
+Date: 13/04
+
+Folder: /PassportLogin
+
+```
++ Free cluster on MongoDB
+> npm init -y
+> npm i express bcryptjs passport passport-local ejs express-ejs-layouts mongoose connect-flash express-session
+> npm i -D nodemon
+> npm run dev
+```
+
+Don't include 'node_modules' in git > npm install.
 
 > ## NodeJS
 
@@ -50,18 +59,22 @@ Folder: /NodeJS
 
 Don't include 'node_modules' in git > npm install.
 
-> ## Passport Login
+> ## React JS
 
-Date: 13/04
+Date: 12/04
 
-Folder: /PassportLogin
+Folder: /reactjs
 
 ```
-+ Free cluster on MongoDB
-> npm init -y
-> npm i express bcryptjs passport passport-local ejs express-ejs-layouts mongoose connect-flash express-session
-> npm i -D nodemon
-> npm run dev
+> npx create-react-app my-app
+> npm i uuid
+> npm i react-router-dom
+> npm i axios
+> npm start
 ```
 
-Don't include 'node_modules' in git > npm install.
+> ## Basic Javascript
+
+Date: 12/04
+
+Folder: /Javascript
