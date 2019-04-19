@@ -11,7 +11,10 @@ function Posts() {
         </header>
         <div className='posts'>
           <article>
-            <Link to='/' className='image'>
+            <Link
+              to={{ pathname: '/generic/10', params: { id: 10 } }}
+              className='image'
+            >
               <img src='images/pic01.jpg' alt='' />
             </Link>
             <h3>Interdum aenean</h3>
@@ -29,7 +32,10 @@ function Posts() {
             </ul>
           </article>
           <article>
-            <Link to='/' className='image'>
+            <Link
+              to={{ pathname: '/generic/11', params: { id: 11 } }}
+              className='image'
+            >
               <img src='images/pic02.jpg' alt='' />
             </Link>
             <h3>Nulla amet dolore</h3>
