@@ -6,13 +6,15 @@ This contains all tutorials I've done to learn web development.
 
 Date: 21/04
 
-Folder: /reactnew
+Folder: /reactnews
 
 ```
 > npm install create-react-app
 > create-react-app client
 > cd client
 > npm install prop-types --save
+> npm install react-router-dom --save
+> npm install redux react-redux redux-thunk --save
 > npm start
 ```
 
