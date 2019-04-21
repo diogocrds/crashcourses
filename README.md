@@ -9,6 +9,8 @@ Date: 21/04
 Folder: /reactnews
 
 ```
+> mkdir client
+> cd client
 > npm install create-react-app
 > create-react-app client
 > cd client
@@ -16,6 +18,16 @@ Folder: /reactnews
 > npm install react-router-dom --save
 > npm install redux react-redux redux-thunk --save
 > npm start
+```
+
+```
+> mkdir server
+> cd server
+> npm init
+> npm install express --save
+> npm install -g nodemon
+> npm install cors --save
+> nodemon
 ```
 
 > ## Bootstrap 4.0.0 Course
