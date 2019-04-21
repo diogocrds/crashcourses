@@ -2,6 +2,20 @@
 
 This contains all tutorials I've done to learn web development.
 
+> ## NodeJS-React-React-Redux News
+
+Date: 21/04
+
+Folder: /reactnew
+
+```
+> npm install create-react-app
+> create-react-app client
+> cd client
+> npm install prop-types --save
+> npm start
+```
+
 > ## Bootstrap 4.0.0 Course
 
 Date: 17/04
@@ -24,7 +38,7 @@ Folder: /editorialWeb
 ```
 + Editorial Free Layout by HTML5 UP
 > npx create-react-app editorialWeb
-> npm i react-router-dom
+> npm i react-router-dom passport passport-local mongoose
 > npm start
 ```
 

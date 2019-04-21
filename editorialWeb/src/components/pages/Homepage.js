@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../layout/Banner';
 import Features from '../layout/Features';
-import Posts from '../layout/Posts';
+import Articles from '../layout/Articles';
 
 export default function Homepage() {
   return (
@@ -9,7 +9,7 @@ export default function Homepage() {
       {/* ------- Banner ------- */}
       <Banner />
       <Features />
-      <Posts />
+      <Articles />
     </React.Fragment>
   );
 }

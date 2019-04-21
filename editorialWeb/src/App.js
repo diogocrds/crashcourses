@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/layout/Header';
 import Sidebar from './components/layout/Sidebar';
-import Generic from './components/pages/Generic';
+import Page from './components/pages/Page';
 import Homepage from './components/pages/Homepage';
 import ScrollToTop from './ScrollToTop';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -34,32 +34,35 @@ import './App.css';
     - Section
     - Footer
 */
+
 class App extends Component {
   render() {
     return (
-      <Router>
-        <ScrollToTop />
-        <div id='wrapper'>
-          <div id='main'>
-            <div className='inner'>
-              {/* ------- Header ------- */}
-              <Header />
-              <Route
-                exact
-                path='/'
-                render={props => <Homepage {...props} isAuthed={true} />}
-              />
-              <Route
-                exact
-                path='/generic/:id'
-                render={props => <Generic {...props} isAuthed={true} />}
-              />
+      <Provider store={store}>
+        <Router>
+          <ScrollToTop />
+          <div id='wrapper'>
+            <div id='main'>
+              <div className='inner'>
+                {/* ------- Header ------- */}
+                <Header />
+                <Route
+                  exact
+                  path='/'
+                  render={props => <Homepage {...props} isAuthed={true} />}
+                />
+                <Route
+                  exact
+                  path='/pg/:id?'
+                  render={props => <Page {...props} isAuthed={true} />}
+                />
+              </div>
             </div>
+            {/* ------- Sidebar ------- */}
+            <Sidebar />
           </div>
-          {/* ------- Sidebar ------- */}
-          <Sidebar />
-        </div>
-      </Router>
+        </Router>
+      </Provider>
     );
   }
 }

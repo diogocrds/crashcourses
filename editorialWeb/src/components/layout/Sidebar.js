@@ -21,7 +21,7 @@ function Sidebar() {
               <Link to='/'>Homepage</Link>
             </li>
             <li>
-              <Link to='/generic'>Generic</Link>
+              <Link to='/pg/0'>Generic</Link>
             </li>
             <li>
               <Link to='elements.html'>Elements</Link>
