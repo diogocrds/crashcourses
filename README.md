@@ -4,7 +4,7 @@ This contains all tutorials I've done to learn web development.
 
 > ## NodeJS-React-React-Redux News
 
-Date: 21/04
+Date: 21/04/2019
 
 Folder: /reactnews
 
@@ -32,7 +32,7 @@ Folder: /reactnews
 
 > ## Bootstrap 4.0.0 Course
 
-Date: 17/04
+Date: 17/04/2019
 
 Folder: /bs4
 
@@ -45,7 +45,7 @@ Folder: /bs4
 
 > ## Editorial Website with React
 
-Date: 14/04
+Date: 14/04/2019
 
 Folder: /editorialWeb
 
@@ -58,7 +58,7 @@ Folder: /editorialWeb
 
 > ## Passport Login
 
-Date: 13/04
+Date: 13/04/2019
 
 Folder: /PassportLogin
 
@@ -74,7 +74,7 @@ Don't include 'node_modules' in git > npm install.
 
 > ## NodeJS
 
-Date: 13/04
+Date: 13/04/2019
 
 Folder: /NodeJS
 
@@ -102,7 +102,7 @@ Don't include 'node_modules' in git > npm install.
 
 > ## React JS
 
-Date: 12/04
+Date: 12/04/2019
 
 Folder: /reactjs
 
@@ -116,6 +116,6 @@ Folder: /reactjs
 
 > ## Basic Javascript
 
-Date: 12/04
+Date: 12/04/2019
 
 Folder: /Javascript
