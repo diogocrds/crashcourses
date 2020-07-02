@@ -1,10 +1,12 @@
 const path = require('path');
 const express = require('express');
+const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const passport = require('passport');
 const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 const connectDB = require('./config/db');
 
 // Load config
@@ -17,6 +19,10 @@ connectDB();
 
 const app = express();
 
+// Body parser
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 // Logging
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
@@ -26,12 +32,16 @@ if (process.env.NODE_ENV === 'development') {
 app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', '.hbs');
 
+// Static folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Sessions
 app.use(
   session({
-    secret: 'keyboard cat',
+    secret: 'keyboard kitty',
     resave: false, // don't save a session if nothing is modified
     saveUninitialized: false, // don't create a sesion until something is stored
+    store: new MongoStore({ mongooseConnection: mongoose.connection }),
   })
 );
 
@@ -39,12 +49,10 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Static folder
-app.use(express.static(path.join(__dirname, 'public')));
-
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
+app.use('/stories', require('./routes/stories'));
 
 const PORT = process.env.PORT || 3000;
 
